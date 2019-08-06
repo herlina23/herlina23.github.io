@@ -1,0 +1,121 @@
+.grid-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px 10px;
+    grid-template-areas: ". . .""sidebar konten-1 konten-1""sidebar konten-2 konten-2""sidebar konten-3 konten-3""footer footer footer";
+}
+
+.grid-container>div {
+    border: 1px dashed #888;
+}
+
+.header {
+    grid-area: 1 / 1 / 2 / 5;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.konten-1 {
+    grid-area: konten-1;
+}
+
+.konten-2 {
+    grid-area: konten-2;
+}
+
+.konten-3 {
+    grid-area: konten-3;
+}
+
+.imgcontainer {
+    display: table;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border: 0px solid #333;
+}
+
+.imglogo {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.imglogo img {
+    max-height: 50%;
+    max-width: 50%;
+    border-radius: 53px;
+}
+
+@media screen and (orientation: portrait) {
+    img { max-width: 90%; }
+  }
+
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+
+    20% {
+        left: 0%;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+div#slider {
+    overflow: hidden;
+}
+
+div#slider figure img {
+    width: 20%;
+    float: left;
+}
+
+div#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 10s slidy infinite;
+} 

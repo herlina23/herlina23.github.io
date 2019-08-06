@@ -1,0 +1,40 @@
+{
+    "places": [
+        {
+            "lokasi": [-7.962987, 112.622500],
+            "sponsor": "Teras Komika",
+            "gambar": "../images/imgpeta/Ria-Djenaka.jpg",
+            "review": "Teras Komika - Nongkrong asik dan murah meriah dari hongkong :P."
+        }, 
+        {
+            "lokasi": [-7.938469, 112.633599],
+            "sponsor": "Warunk Upnormal",
+            "gambar": "../images/imgpeta/upnormal.jpg",
+            "review": "Warunk Upnormal - Tempat asik buat nongki se- Upnormal hidup loe :P."
+        }, 
+        {
+            "lokasi": [-7.938723, 112.589576],
+            "sponsor": "Coklat Klasik",
+            "gambar": "../images/imgpeta/coklat.jpg",
+            "review": "Coklat Klasik - Dinner romantis ala ala outdoor dengan lighting yang mengesankan."
+        }, 
+        {
+            "lokasi": [-7.938707, 112.590303],
+            "sponsor": "Bukit Delight",
+            "gambar": "../images/imgpeta/bukit.jpg",
+            "review": "Bukit Delight - Tempat nongkinya orang borjuis :P."
+        },
+        {
+            "lokasi": [-7.946225, 112.61811],
+            "sponsor": "Warung Steak & Shake",
+            "gambar": "../images/imgpeta/wss.jpg",
+            "review": "Warung Steak & Shake - Tempat asik buat ngobrol cantik dengan menu unik."
+        },
+		{
+            "lokasi": [-7.946302, 112.617628],
+            "sponsor": "Ayam Goreng Nelongso",
+            "gambar": "../images/imgpeta/nelongso.jpg",
+            "review": "Ayam Goreng Nelongso - Tombo luwe arek mahasiswa Malang."
+        }
+    ]
+}

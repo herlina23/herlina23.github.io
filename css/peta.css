@@ -1,0 +1,60 @@
+html, body, #map {
+    height: 100%;
+    width: 100vw;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+body {
+    padding: 0;
+    margin: 0; 
+}
+
+.container {
+    display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 59% 40%;
+}
+
+.peta {
+    grid-column: 1/-1;
+}
+
+.gambar {
+    background: #581645;
+    grid-column: 1/6;
+}
+
+.review {
+    background: #FFC30F;
+    grid-column:6/-1;
+    padding: 20px;
+}
+
+h2{ 
+    font-weight: 400; 
+    text-align:center; 
+    margin: 0px; 
+    color: white; 
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    padding-top: 25px;
+}
+.header{
+    background: url('../images/imgpeta/arab-deco.jpg');
+    
+}
+.breadcrumbtitle{
+    margin: 0px;
+    padding: 10px 0px 20px 0px;
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}

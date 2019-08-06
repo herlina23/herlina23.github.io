@@ -1,0 +1,169 @@
+body {
+    background-color: white;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    font-family: 'Roboto';
+    /* max-width: 100%;
+    max-height: 100%; */
+    margin: 5px 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+button,
+input,
+select,
+a {
+    outline: none !important;
+}
+
+
+.container {
+    display: grid;
+    width: 100%;
+    height: 100%;  
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 90px 110px 110px 110px 30px;
+    grid-gap: 10px;
+}
+
+.menu {
+    background: #581645;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.menu span {
+    /*vertical-align:*/
+
+}
+
+.sidebar {
+    background: #FF5733;
+    display: flex;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-end: 1/2;
+    overflow: auto;
+}
+
+.konten {
+    display: flex;
+    grid-column: 2/5;
+    align-items: center;
+    justify-content: left;
+}
+
+.item1 {
+    background: #900C3F;
+}
+
+.item2 {
+    background: #C70039;
+}
+
+.item3 {
+    background: #FFC30F;
+}
+
+
+
+.konten span {
+    margin-right: 20px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.footer {
+    display: flex;
+    background: #581645;
+    grid-column: 1/5;
+    grid-row: 5/5;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.icon-img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 5px;
+    align-self: center;
+    color: white;
+}
+
+.img-apps {
+    width: 80px;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 80px;
+    align-self: center;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.menu a {
+    color: white;
+    margin-right: 10px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+}
+
+.footer a {
+    color: #fff;
+}
+
+.konten a {
+    color: white;
+    margin-right: 10px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.img-profil {
+    display: flex;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    object-fit: fill;
+    height: 150px;
+    width: 150px;
+    color: white;
+}
+
+@media (max-width: 480px) and (max-width: 700px) {
+    .img-profil {
+        max-height: 70px;
+        max-width: 70px;
+    }
+
+    .img-apps {
+        max-height: 70px;
+        max-width: 70px;
+    }
+}

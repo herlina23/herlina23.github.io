@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Herlina Prastiwi- GDEV 2018</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="/manifest.json">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/custom.css" />
+
+   
+    <link rel="icon" href="images/hp.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" />
+</head>
+
+<body class="body">
+
+    <!-- Membuat Service Worker -->
+    <script>
+        if('serviceWorker' in navigator) {
+            // SW ada
+            navigator.serviceWorker.register('serviceworker.js')
+                .then(reg => console.log('Service worker registered!'))
+                .catch(error => console.log('Registration failed: ', error))
+        }
+        else {
+            console.log('Browser not supported!');
+        }
+    </script>
+
+    <div class="container">
+        <!-- Grid Menu -->
+        <div class="menu">
+            <a href="index.html">
+            <center>
+                <img src="images/hp.png" class="icon-img" />
+                <span>Herlina Prastiwi</span>
+                </center>
+            </a>
+        </div>
+
+        <!-- Grid Sidebar -->
+        <div class="sidebar">
+            <img src="images/moi.jpg" class="img-profil" width="100" height="100" />
+        </div>
+
+        <!-- Grid Konten 1 -->
+        <div class="konten item1">
+            <a href="project1/add2numbers.html">
+                <img src="images/calcu1.png" class="img-apps" />
+                <span> <strong>Penjumlahan Dua Angka</strong></span>
+            </a>
+        </div>
+
+        <!-- Grid Konten 2 -->
+        <div class="konten item2">
+            <a href="project2/mapbox.html">
+                <img src="images/map1.png" class="img-apps" />
+                <span> <strong>Lokasi Istimewa dengan Mapbox</strong></span>
+            </a>
+        </div>
+
+        <!-- Grid Kontent 3 -->
+        <div class="konten item3">
+            <a href="project4/peta.html">
+                <img src="images/resto.png" class="img-apps" />
+                <span> <strong>Mapbox Details dengan Fetch JSON </strong></span>
+            </a>
+        </div>
+
+        <!-- Grid Kontent 4 -->
+       <!--  <div class="konten item4">
+            <a href="project4/peta.html">
+                <img src="images/map.png" class="img-apps" />
+                <span>Project 4 : <strong>Mapbox Fetch JSON</strong></span>
+            </a>
+        </div> -->
+
+        <!-- Grid Footer -->
+        <div class="footer">
+            
+            &nbsp;&copy; 2018 -<strong><a href="https://instagram.com/cyber_herlina"> cyber_herlina</a></strong>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "Herlina-GDev-Kejar-2018",
+  "short_name": "MWS-Herlina",
+  "lang": "en-US",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#581645",
+  "icons": [
+    {
+      "src": "images/icon-a.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icon-b.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icon-c.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#FFC30F"
+}
+
+https://ibb.co/iADOdL
+https://ibb.co/cEWn50
+https://ibb.co/fMEUJL

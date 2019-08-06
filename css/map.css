@@ -1,0 +1,21 @@
+body{ margin: 0px auto; background-image: url('../images/imgpeta/arab-deco.jpg'); background-repeat: repeat; }
+#mapid { height: 100vh; }
+h2{ 
+    font-weight: 400; 
+    text-align:center; 
+    margin: 0px; 
+    color: #FFFFFF; 
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    padding-top: 25px;
+}
+.header{
+    background: url('../images/imgpeta/arab-deco.jpg');
+}
+.breadcrumbtitle{
+    margin: 0px;
+    padding: 10px 0px 20px 0px;
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}

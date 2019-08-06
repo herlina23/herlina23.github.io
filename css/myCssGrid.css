@@ -1,0 +1,41 @@
+.container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: "header header"
+        "sidebar content-1"
+        "sidebar content-2"
+        "sidebar content-3"
+        "footer footer";
+    grid-template-columns: 120px 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 60px;
+}
+
+.container>div {
+    border: 1px dashed #888;
+}
+
+.header {
+    grid-area: header;
+    background: #ffffff;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content-1 {
+    grid-area: content-1;
+}
+
+.content-2 {
+    grid-area: content-2;
+}
+
+.content-3 {
+    grid-area: content-3;
+}
+
+.footer {
+    grid-area: footer;
+}

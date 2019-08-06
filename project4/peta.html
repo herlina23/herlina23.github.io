@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Pakai Fetch JSON</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../css/peta.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Roboto+Mono:400,500|Material+Icons"
+        rel="stylesheet">
+    <link rel="icon" href="../images/hp.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" />
+</head>
+
+<body>
+    <div class="header">
+        <!-- <h2><a href="https://herlina-project.firebaseapp.com/data/petanew.json">Tempat Nongrong Asik di Kota Malang</a></h2> -->
+        <br>
+
+         <p class="breadcrumbtitle"><a href="../index.html" style="color:#fff; text-decoration:none;">Nongki Asik di Malang</a></p> 
+
+         Data JSON : 
+            <a href="https://herlina-project.firebaseapp.com/data/petanew.json"><img src="../images/imgpeta/json.png" style="width:20px; height:20px;"></a>
+    </div>
+    <div class='container'>
+        <div class='peta' id='mapid'></div>
+        <div class='gambar' id='gmb'></div>
+        <div class='review' id='review'> 
+        Data JSON : 
+            <a href="https://herlina-project.firebaseapp.com/data/petanew.json"><img src="../images/imgpeta/json.png" style="width:20px; height:20px;"></a>
+            <br>
+        </div>
+    </div>
+</body>
+
+<!-- javascript untuk akses peta leaflet -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+
+<script>
+    let mymap = L.map('mapid').setView([-7.986483, 112.628681], 15);
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 20,
+        id: 'mapbox.streets',
+        accessToken: 'pk.eyJ1IjoieXVzdWZyaXphbGgiLCJhIjoiY2pubDh4ZDFtMDZqajNwbnppandja25nbCJ9.ULxqaXHPzFArFjMk7cdcxQ'
+    }).addTo(mymap);
+</script>
+
+<script src="../js/peta-fetch-json.js"></script>
+
+</html>
